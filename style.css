@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.row{
+    display: flex;
+    flex: 1;
+    align-content: stretch;
+}
+
+.cell{
+    flex: 1;
+}
+
+.hovered{
+    background-color: grey;
+}
+
+button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 20px;
+    background-color: rgb(233, 149, 149);
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 900;
+    box-shadow: 10px 10px 0px 0px #222222;
+    color: #222222;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+button:hover{
+    box-shadow: 7px 7px 0px 0px #222222;
+    background-color: rgb(236, 169, 169);
+}
+
+button:focus{
+    outline: none;
+}
